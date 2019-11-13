@@ -10,13 +10,14 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="653dp" />
+        android:layout_height="427dp" />
 
     <Button
         android:id="@+id/second_activity"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="second_activity"
-        android:layout_height="wrap_content"
-        android:text="second activity" />
+        android:text="second activity"
+        android:visibility="visible" />
 </LinearLayout>

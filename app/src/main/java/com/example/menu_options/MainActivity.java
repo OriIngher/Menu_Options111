@@ -1,4 +1,7 @@
 package com.example.menu_options;
+/**
+ * @author Ori Ingher
+ */
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -17,9 +20,14 @@ LinearLayout ll;
     public boolean onCreateOptionsMenu (Menu menu)
     {
         getMenuInflater().inflate(R.menu.main, menu);
-
         return true;
     }
+
+    /**
+     *
+     * @param item
+     * @return the function sets the background color to the chosen one and returns true
+     */
     public boolean onOptionsItemSelected(MenuItem item)
     {
         int id =item.getItemId();
@@ -33,7 +41,7 @@ LinearLayout ll;
                 ll.setBackgroundColor(Color.BLUE);
             }
             else
-                if (id==R.id.Yelloew)
+                if (id==R.id.Yellow)
                 {
                     ll.setBackgroundColor(Color.YELLOW);
                 }
@@ -49,6 +57,9 @@ LinearLayout ll;
 
     }
 
+    /**
+     * @param view
+     */
     public void second_activity(View view) {
         Intent si = new Intent(this,Extra_Color.class);
         startActivity(si);
